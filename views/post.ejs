@@ -1,6 +1,9 @@
 <%- include('partials/header') -%>
 
 <h1> <%= blogPostTitle %> </h1>
-<p class="blog-text"> <%= blogPostContent %> </p>
+<h5 class="blog-text"> <%= blogPostContent %> </h5>
+<div class="container-fluid img-holder" style="
+background-image: url('../uploads/<%= blogPostImg %>');
+"></div>
 
 <%- include('partials/footer') -%>
