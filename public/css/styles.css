@@ -102,6 +102,19 @@ i {
   width: 100%;
 }
 
+.filter-nav {
+  margin: 3% auto;
+}
+
+.filter {
+  border-radius: 0!important;
+  border-right: 1px solid #1abc9c!important;
+}
+
+.filter:last-child {
+  border-right: none!important;
+}
+
 /* --------------------------------------
   ALBUM SECTION
 -------------------------------------- */
@@ -182,7 +195,7 @@ h1 a:hover {
 .time-sig {
   font-family: 'Cinzel', serif;
   font-weight: 400;
-  color: #1abc9c;
+  color: #1abc9c!important;
   font-size: 12px;
 }
 

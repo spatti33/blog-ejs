@@ -53,7 +53,7 @@ app.get("/posts/:titleOfPost", function (req, res) {
 
   posts.forEach(function(post) {
     if (_.lowerCase(post.title) === requestedPost) {
-      res.render("post", {blogPostTitle: post.title, blogPostContent: post.body, blogPostImg: post.img});
+      res.render("post", {blogPostTitle: post.title, blogPostContent: post.body, blogPostImg: post.img, blogPostSubtitle: post.subtitle});
     }
   });
 });
@@ -69,6 +69,7 @@ app.post("/compose", upload.single("postImg"), function (req, res) {
   
   const post = {
     title: req.body.postTitle,
+    subtitle: req.body.postSubtitle,
     body: req.body.postBody,
     img: nameOfImg
   };

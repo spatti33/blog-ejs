@@ -9,6 +9,17 @@
   <h1 class="heading">Get Inspired</h1>
 </div>
 
+<div class="container-fluid filter-nav">
+  <nav class="nav nav-pills nav-fill">
+    <a class="nav-link filter" href="#">Lifestyle</a>
+    <a class="nav-link filter" href="#">Travel</a>
+    <a class="nav-link filter" href="#">Food</a>
+    <a class="nav-link filter" href="#">Tech</a>
+    <a class="nav-link filter" href="#">Economy</a>
+    <a class="nav-link filter" href="#">All</a>
+  </nav>
+</div>
+
 <div class="album py-5">
     <div class="container">
 
@@ -23,7 +34,7 @@
     
                 <div class="card-body">
                     <h1><a href="/posts/<%= post.title %>"><%= post.title %></a></h1>
-                    <p class="card-text fifty-chars"> <%= post.body %> </p>
+                    <p class="card-text fifty-chars"> <%= post.subtitle %> </p>
                     <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group two-btns">
                       <form action="/posts/<%= post.title %>">
