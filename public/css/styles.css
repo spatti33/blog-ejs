@@ -251,9 +251,38 @@ form p {
   background-attachment: fixed;
 }
 
-.blog-text {
+.blog-title {
+  border-bottom: 1.5px solid #1abc9c;
+  width: 50%;
+}
+
+.blog-subtitle {
   width: 50%;
   color: grey;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.blog-text {
+  width: 90%;
+  color: rgb(106, 106, 106);
+  white-space: pre-wrap;
+  margin-top: 5%;
+  line-height: 2;
+  border-left: 1px solid #1abc9c;
+  padding-left: 3%;
+  font-family: 'Merriweather', serif;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-img-top {
+  height: 18rem;
+  width: 18rem;
+  background-color: blue;
 }
 
 /* --------------------------------------

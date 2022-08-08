@@ -1,10 +1,42 @@
 <%- include('partials/header') -%>
 
-<h1> <%= blogPostTitle %> </h1>
-<h5 class="blog-text"> <%= blogPostSubtitle %> </h5>
+<h1 class="blog-title"> <%= blogPostTitle %> </h1>
+<h5 class="blog-subtitle"> <%= blogPostSubtitle %> </h5>
 <div class="container-fluid img-holder" style="
 background-image: url('../uploads/<%= blogPostImg %>');
 "></div>
 <p class="blog-text"><%= blogPostContent %></p>
+
+<hr>
+
+<h2>Recent Posts</h2>
+
+<div class="card" style="width: 18rem;">
+    <div class="card-img-top"></div>
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+    <div class="card-img-top"></div>
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+    <div class="card-img-top"></div>
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+    <div class="card-img-top"></div>
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+</div>
 
 <%- include('partials/footer') -%>
